@@ -12,13 +12,13 @@ check_exit_status() {
 
     if [ $? -eq 0 ]
     then
-        echo -e
+        echo -e ""
         echo -e "Success"
-        echo -e
+        echo -e ""
     else
-        echo -e
+        echo -e ""
         echo -e "[ERROR] Process Failed!"
-        echo -e
+        echo -e ""
 		
         read -p "The last command exited with an error. Exit script? (yes/no) " answer
 
@@ -32,7 +32,7 @@ check_exit_status() {
 greeting() {
 
     clear
-    echo -e
+    echo -e ""
     echo -e "${YELLOW}Hello, $USER. This script will install a LiteChain Disciple Node.${NC}"
     echo -e ""
     read -n 1 -s -r -p "Press any key to continue....."
