@@ -1,6 +1,10 @@
 To Install a new disciple node on Ubuntu 18.04 please enter in the following as root
 
-	bash <(wget -qO- https://raw.githubusercontent.com/lcxnetwork/DiscipleNodeInstall/master/lightchain.sh)
+	sudo wget https://raw.githubusercontent.com/lcxnetwork/DiscipleNodeInstall/master/lightchain.sh
+
+	chmod +x lightchain.sh
+
+	source lightchain.sh
 
 
 Once Installed to start your node please enter the command:
